@@ -1,5 +1,5 @@
 # nlp notebook portfolio
-My portfolio of natural language processing Jupyter Notebooks. These were developed as part of my work as a Data Scientist. These notebooks demonstrate my expertise in the full machine learning pipeline, in Python development within Jupyter notebooks, and in a wide variety of NLP tasks. 
+My portfolio of natural language processing Jupyter Notebooks. These were developed as part of my professional career as a Data Scientist. These notebooks demonstrate my expertise in the full machine learning pipeline, in Python development within Jupyter notebooks, and in a wide variety of NLP tasks. 
 
 ## notebooks
 
