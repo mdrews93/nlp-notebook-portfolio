@@ -1,5 +1,5 @@
 # nlp notebook portfolio
-My portfolio of natural language processing Jupyter Notebooks. These were developed as part of my work as a Data Scientist at the start-up IT.com. These notebooks demonstrate expertise in the full machine learning pipeline, in Python development within Jupyter notebooks, and in a wide variety of NLP tasks. 
+My portfolio of natural language processing Jupyter Notebooks. These were developed as part of my work as a Data Scientist. These notebooks demonstrate my expertise in the full machine learning pipeline, in Python development within Jupyter notebooks, and in a wide variety of NLP tasks. 
 
 ## notebooks
 
@@ -21,16 +21,18 @@ My portfolio of natural language processing Jupyter Notebooks. These were develo
 | [dbscan-topic-modeling](notebooks/dbscan-topic-modeling.ipynb) | May 2018 | Tokenization, Vectorization, TFIDF, Feature Engineering, Model Training, Clustering, DBSCAN | pandas, sklearn |
 | [spell-checking](notebooks/spell-checking.ipynb) | May 2018 | Tokenization, TFIDF, Visualization | nltk, matplotlib |
 
-The following is a 2D plot that summarizes the NLP Tasks involved in each of the notebooks. See [Counter for NLP Tasks in README.md table](portfolio-inspector.ipynb#counter-for-nlp-tasks-in-readme-md-table) for the process and code that generates the plot. 
-![nlp-tasks](img/tasks_plot.png)
 
 ## portfolio-inspector
 
-I've created and developed the [portfolio-inspector notebook](portfolio-inspector.ipynb) to explore and analyze the contents of all of the notebooks. 
+Just for fun I've created and developed the [portfolio-inspector notebook](portfolio-inspector.ipynb) to explore and analyze the contents of all of the notebooks. 
+
+### NLP tasks summary
+The following is a 2D plot that summarizes the NLP Tasks involved in each of the notebooks. See [Counter for NLP Tasks in README.md table](portfolio-inspector.ipynb#counter-for-nlp-tasks-in-readme-md-table) for the process and code that generates the plot. 
+![nlp-tasks](img/tasks_plot.png)
 
 ### top-level imports from all notebooks
-The following pie chart shows the distribution of module imports within all of the notebooks. 
-![toplevel imports](img/toplevel_imports.png)
+The following pie chart shows the distribution of module imports within all of the notebooks for the modules that have been imported at least two times. 
+![toplevel imports](img/filtered_toplevel_imports.png)
 
 To compute the counts, I created a regular expression to capture the import statements (see the section [regex for extracting imports](portfolio-inspector.ipynb#regex-for-extracting-imports)) from a given notebook. I created a `dict` to store the results of the regex search. For example, `{'module': 'nltk', 'path': ['stem', 'porter'], 'functions': ['PorterStemmer']}`. This representation neatly stores both the top-level module, the specific path of the imported function/class, and the imported functions/classes. I then use a `Counter` to compute the counts of the imports (see section [counter for imports](portfolio-inspector.ipynb#counter-for-imports)) before finally computing the counts for all of the imports from all of the notebooks (see the section [Counter of all top-level module imports from all notebooks](portfolio-inspector.ipynb#counter-of-all-top-level-module-imports-from-all-notebooks)).
 
